@@ -1,0 +1,15 @@
+test:
+    resource: "@TestBundle/Resources/config/routing.yml"
+    prefix:   /test
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+yml_routing:
+    path: /yml_routing
+    defaults: { _controller: AppBundle:YmlRouting:route }
+    
+lucky_euro_millions:
+    path: /lucky/euromillions
+    defaults: { _controller: AppBundle:Lucky:euroMillions }
