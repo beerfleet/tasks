@@ -3,13 +3,6 @@
     <head>
         {% block head %}
             
-            {% stylesheets
-                'css/bootstrap.css'
-                'css/main.css'
-                'css/test.css'
-                filter='cssrewrite' output='css/compiled/app.css' %}
-            {% endstylesheets %}
-            
             <title>{% block title %}{% endblock %} Test Templates</title>
         {% endblock %}        
     </head>
@@ -21,11 +14,6 @@
             {% endblock %}
         </div>
         
-        {% javascripts 
-        'js/bootstrap.min.js'
-        output='js/compiled/app.js'
-        %}
-        <script src="{{ asset_url }}"></script>
-        {% endjavascripts %}
+
     </body>
 </html>

@@ -4,4 +4,4 @@ test_homepage:
 
 test_template:
     path:     /template
-    defaults: { _controller: TestBundle:Default:base }
+    defaults: { _controller: TestBundle:Default:index }

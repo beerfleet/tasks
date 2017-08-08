@@ -48,7 +48,7 @@ class LuckyController extends Controller {
     
     $winning = ['numbers' => $numbers, 'stars' => $stars];
     
-    return $this->render('Lucky/numbers.html.twig', ['winning' => $winning]);
+    return $this->render('AppBundle:Lucky:numbers.html.twig', ['winning' => $winning]);
   }
 
 }

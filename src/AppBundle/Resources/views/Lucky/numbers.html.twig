@@ -1,0 +1,36 @@
+<body>
+
+  {% stylesheets '@AppBundle/Resources/public/css/lucky.css' filter='cssrewrite' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+
+  <div id="header" class="container center">
+    <h1> Your lucky numbers are </h1>
+  </div>
+
+  {% set numbers = winning['numbers'] %}
+  {% set stars = winning['stars'] %}
+
+  <div class="container center">
+    <section>
+      <h2> Five numbers </h2>
+      <div>
+        {% for number in numbers %}
+          <b> {{ number }} </b>
+        {% endfor %}
+      </div>      
+    </section>
+  </div>
+
+  <div class="container center">
+    <section>
+      <h2> Two stars </h2>
+      <div>
+        {% for star in stars %}
+          <b> {{ star }} </b>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+
+</body>

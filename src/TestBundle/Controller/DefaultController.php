@@ -11,7 +11,7 @@ class DefaultController extends Controller {
   }
 
   public function baseAction() {
-    return $this->render('TestBundle:Template:index.html.twig');
+    return $this->render('TestBundle:Template:base.html.twig');
   }
 
 }
