@@ -1,9 +1,39 @@
 {% extends "@Bookmarks/base.html.twig" %}
 
+{% block stylesheets %}
+  {% stylesheets 'bundles/bookmarks/css/hover.css' filter='cssrewrite' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />      
+  {% endstylesheets %}
+{% endblock stylesheets %}
+
 {% block title %}
   Dashboard
 {% endblock title %}
 
-{% block content %}
-  
-{% endblock content %}
+{% block header %}
+
+  <div class="jumbotron">
+    <div class="container"> 
+      <div class="jvb-jump-left-bottom round6">
+        <h1 class="hvr-pulse-grow">Welkom bij ETION, </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <h2>Hoofding 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock header %}

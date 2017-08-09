@@ -1,0 +1,28 @@
+/*
+Customization and override
+*/
+/* 
+    Created on : 9-aug-2017, 14:38:03
+    Author     : jvanbiervliet
+
+*:hover {
+  border: 1px red dashed;
+}
+*/
+
+html, body {
+  background-color: #dadada;
+  font-family: "Calibri";
+}
+
+.jvb-jump-left-bottom {
+  background-color: #ebe2e2;
+  margin-left: -80px;
+  padding-left: 80px;
+  padding-bottom: 80px;
+  margin-bottom: -80px;
+}
+
+.round6 {
+  border-radius: 6px;
+}

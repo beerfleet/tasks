@@ -4,25 +4,38 @@
     
     {% block head %}
       
+      {% block bootstrapcss %}
+        {% stylesheets 'bundles/bookmarks/css/bootstrap.css'
+                       'bundles/bookmarks/css/bootstrap-theme.css'
+           filter='cssrewrite' %}
+          <link rel="stylesheet" href="{{ asset_url }}"/>
+        {% endstylesheets %}
+      {% endblock bootstrapcss %}
+      
       {% block stylesheets %}
       {% endblock stylesheets %}
       
-      <link rel="stylesheet" href="style.css" />
+      {% stylesheets 'bundles/bookmarks/css/style.css' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />      
+      {% endstylesheets %}
       
       <title>{% block wholetitle %} ETION tools - {% block title %}{% endblock %} {% endblock wholetitle %} </title>
     {% endblock %}
     
   </head>
   <body>
-    <div id="content">
-    {% block content %}{% endblock %}
+    
+    <div id="header">
+      {% block header %}{% endblock header %}
     </div>
     
-    <div id="footer">
-      {% block footer %}
-        &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
-      {% endblock %}
-    </div>
+    <div id="content">
+    {% block content %}{% endblock %}
+    </div>        
+    
+    {% block bootstrapjs %}
+      
+    {% endblock bootstrapjs %}
     
     {% block javascripts %}
     {% endblock javascripts %}
