@@ -1,0 +1,10 @@
+# BookmarksBundle/config/routing
+
+homepage:
+  path: /
+  defaults: { _controller: BookmarksBundle:Homepage:dashboard }
+
+bookmarks-show:
+    path: /bookmarks
+    defaults: { _controller: BookmarksBundle:Homepage:dashboard }
+    
