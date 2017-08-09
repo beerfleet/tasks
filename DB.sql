@@ -11,6 +11,11 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
+
+-- Databasestructuur van worktoolsdb wordt geschreven
+CREATE DATABASE IF NOT EXISTS `worktoolsdb` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `worktoolsdb`;
+
 -- Structuur van  tabel worktoolsdb.bookmark wordt geschreven
 CREATE TABLE IF NOT EXISTS `bookmark` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -19,9 +24,9 @@ CREATE TABLE IF NOT EXISTS `bookmark` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Dumpen data van tabel worktoolsdb.bookmark: ~0 rows (ongeveer)
+-- Dumpen data van tabel worktoolsdb.bookmark: ~8 rows (ongeveer)
 /*!40000 ALTER TABLE `bookmark` DISABLE KEYS */;
-INSERT INTO `bookmark` (`id`, `title`, `path`) VALUES
+REPLACE INTO `bookmark` (`id`, `title`, `path`) VALUES
 	(1, 'web projecten', 'C:\\xampp\\htdocs\\projects\r\n'),
 	(2, 'GDPR', 'C:\\Users\\jvanbiervliet\\OneDrive - Etion\\Docs\\security'),
 	(3, 'Overzicht', 'w:/03_Ondersteuning/03_03_ICT/Prive/Gebouwenbeheer/Camera\'s/ETION-cameras.html'),
