@@ -1,0 +1,16 @@
+BookmarksBundle\Entity\Bookmark:
+  type: entity
+  table: bookmark
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    title:
+      type: string
+      length: 50
+    path:
+      type: string
+      length: 300
+      

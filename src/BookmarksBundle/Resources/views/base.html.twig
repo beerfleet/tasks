@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    {% block head %}
+      
+      {% block stylesheets %}
+      {% endblock stylesheets %}
+      
+      <link rel="stylesheet" href="style.css" />
+      
+      <title>{% block wholetitle %} ETION tools - {% block title %}{% endblock %} {% endblock wholetitle %} </title>
+    {% endblock %}
+    
+  </head>
+  <body>
+    <div id="content">
+    {% block content %}{% endblock %}
+    </div>
+    
+    <div id="footer">
+      {% block footer %}
+        &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
+      {% endblock %}
+    </div>
+    
+    {% block javascripts %}
+    {% endblock javascripts %}
+      
+  </body>
+</html>

@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Response;
 class HomepageController extends Controller {
 
   public function dashboardAction() {
-    
+    return $this->render('@Bookmarks/Homepage/dashboard.html.twig', []);
   }
 
 }
