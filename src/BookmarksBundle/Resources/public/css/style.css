@@ -10,10 +10,17 @@ Customization and override
 }
 */
 
+
 html, body {  
   background-color: #00A6C1;
   color: white;
   font-family: "Calibri";
+}
+
+/* header */
+#header .jumbotron h1 {
+  color: #00A6C1;
+  font-size: 5em;
 }
 
 .jvb-jump-left-bottom {  
@@ -24,15 +31,18 @@ html, body {
   margin-bottom: -80px;
 }
 
-.round6 {
-  border-radius: 6px;
-}
-
 .jumbotron {
   margin-bottom: 0px;
 }
 
-#header .jumbotron h1 {
-  color: #00A6C1;
-  font-size: 5em;
+/* misc */
+.round6 {
+  border-radius: 6px;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

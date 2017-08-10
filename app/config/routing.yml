@@ -12,6 +12,3 @@ lucky_euro_millions:
     path: /lucky/euromillions
     defaults: { _controller: AppBundle:Lucky:euroMillions }
     
-bookmarks:
-    path: /bookmarks
-    defaults: { _controller: BookmarksBundle:Homepage:dashboard }

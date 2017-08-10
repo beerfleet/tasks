@@ -4,7 +4,7 @@ homepage:
   path: /
   defaults: { _controller: BookmarksBundle:Homepage:dashboard }
 
-bookmarks-show:
+bookmarks:
     path: /bookmarks
-    defaults: { _controller: BookmarksBundle:Homepage:dashboard }
+    defaults: { _controller: BookmarksBundle:Homepage:bookmarks }
     

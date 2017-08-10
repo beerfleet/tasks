@@ -21,5 +21,9 @@ class HomepageController extends Controller {
   public function dashboardAction() {
     return $this->render('@Bookmarks/Homepage/dashboard.html.twig', []);
   }
+  
+  public function bookmarksAction() {
+    return $this->render('@Bookmarks/Bookmarks/bookmarks.html.twig', []);
+  }
 
 }
