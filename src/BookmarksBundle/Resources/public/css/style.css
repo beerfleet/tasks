@@ -10,13 +10,14 @@ Customization and override
 }
 */
 
-html, body {
-  background-color: #dadada;
+html, body {  
+  background-color: #00A6C1;
+  color: white;
   font-family: "Calibri";
 }
 
-.jvb-jump-left-bottom {
-  background-color: #ebe2e2;
+.jvb-jump-left-bottom {  
+  background-color: white;
   margin-left: -80px;
   padding-left: 80px;
   padding-bottom: 80px;
@@ -25,4 +26,13 @@ html, body {
 
 .round6 {
   border-radius: 6px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+#header .jumbotron h1 {
+  color: #00A6C1;
+  font-size: 5em;
 }

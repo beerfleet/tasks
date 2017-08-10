@@ -38,7 +38,11 @@
     {% endblock bootstrapjs %}
     
     {% block javascripts %}
-    {% endblock javascripts %}
+      {% javascripts '@BookmarksBundle/Resources/public/js/jquery-3.2.1.js' 
+                      '@BookmarksBundle/Resources/public/js/bootstrap.js' %}
+        <script src="{{ asset_url }}"></script>
+      {% endjavascripts %}
+    {% endblock %}
       
   </body>
 </html>
