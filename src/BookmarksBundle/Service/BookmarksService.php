@@ -15,10 +15,23 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  *
  * @author jvanbiervliet
  */
-class BookmarksService extends Controller {
+
+use BookmarksBundle\Entity\Bookmark;
+use Doctrine\ORM\EntityManager;
+
+class BookmarksService {
+  
+  private $em;
+  
+  public function __construct(EntityManager $em) {
+    $this->em = $em;
+  }
 
   public function fetchAllBookmarks() {
-    
+    /** @var $repo EntityRepository */    
+    $repo = $this->em->getRepository(Bookmark::class);    
+    $bookmarks = $repo->findAll();
+    return $bookmarks;
   }
 
 }

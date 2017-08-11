@@ -15,11 +15,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  *
  * @author jvanbiervliet
  */
+
+use BookmarksBundle\Service\BookmarksService;
+
 class BookmarksController extends Controller {
 
   public function showBookmarksAction() {
+    /* @var $srv BookmarksService */
     $srv = $this->get('bookmarks.actions');
-    return $srv->fetchAllBookmarks();
+    $bookmarks = $srv->fetchAllBookmarks();
+    
   }
 
 }

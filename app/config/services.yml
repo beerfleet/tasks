@@ -35,6 +35,8 @@ services:
     #         $someArgument: 'some_value'
 
     bookmarks.actions:
-      class: BookmarksBundle\Service\BookmarksService
+      class: BookmarksBundle\Service\BookmarksService      
       public: true
+      arguments: 
+        - '@doctrine.orm.entity_manager'
               
