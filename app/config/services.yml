@@ -34,6 +34,7 @@ services:
     #     arguments:
     #         $someArgument: 'some_value'
 
+    # ETION: MIJN EIGEN SERVICE DEFINITIE 
     bookmarks.actions:
       class: BookmarksBundle\Service\BookmarksService      
       public: true

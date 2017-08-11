@@ -37,6 +37,35 @@ html, body {
   margin-bottom: 0px;
 }
 
+/* content */
+.show-bookmarks {
+  padding-top: 40px;
+}
+
+/* tabel */
+.etion-tabel {
+  box-shadow: 3px 3px 15px #888888;
+  width: 100%;
+}
+
+.etion-tabel, .etion-tabel th, .etion-tabel td {  
+  border: 1px solid #e2dfdf;
+}
+
+tbody {
+  background-color: white;
+  color: gray;
+}
+
+.etion-tabel th {
+  height: 40px;
+  text-align: center;
+}
+
+.etion-tabel td {
+  padding: 8px;
+}
+
 /* misc */
 .round6 {
   border-radius: 6px;

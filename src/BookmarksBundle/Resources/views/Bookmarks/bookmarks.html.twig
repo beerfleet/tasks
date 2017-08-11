@@ -4,10 +4,43 @@
   {% include "@Bookmarks/hover-effects.html.twig" %}
 {% endblock stylesheets %}
 
+{% block title %}
+  Bookmarks
+{% endblock title %}
+
 {% block header %}      
   {% include "@Bookmarks/navigation.html.twig" %}  
 {% endblock header %}
 
 {% block content %}
-  
+  <div class="show-bookmarks">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <h1>MIJN SNELKOPPELINGEN</h1>
+            <input type="text" class="form-control" id="etion-tabel-filter" onkeyup="filterFunctie()" placeholder="Filter koppelingen ...">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <table class="etion-tabel">
+            <thead>
+              <tr class="header">
+                <th>Title</th>
+                <th>Path</th>
+              </tr>  
+            </thead>
+            <tbody>
+              {% for bookmark in bookmarks %}
+                <tr>
+                  <td>{{ bookmark.title }}</td>
+                  <td>{{ bookmark.path }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock content %}

@@ -9,22 +9,18 @@
 namespace BookmarksBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 /**
  * Description of BookmarksController
  *
  * @author jvanbiervliet
  */
 
-use BookmarksBundle\Service\BookmarksService;
-
-class BookmarksController extends Controller {
-
-  public function showBookmarksAction() {
-    /* @var $srv BookmarksService */
+class BookmarksController extends Controller {    
+  
+  public function showBookmarksAction() {    
     $srv = $this->get('bookmarks.actions');
     $bookmarks = $srv->fetchAllBookmarks();
-    
+    return $this->render('@Bookmarks/Bookmarks/bookmarks.html.twig', ['bookmarks' => $bookmarks]);
   }
 
 }
