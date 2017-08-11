@@ -6,20 +6,19 @@
  * and open the template in the editor.
  */
 
-namespace BookmarksBundle\Controller;
+namespace BookmarksBundle\Service;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Description of HomepageController
+ * Description of BookmarksService
  *
  * @author jvanbiervliet
  */
-class HomepageController extends Controller {
+class BookmarksService extends Controller {
 
-  public function dashboardAction() {
-    return $this->render('@Bookmarks/Homepage/dashboard.html.twig', []);
-  }    
+  public function fetchAllBookmarks() {
+    
+  }
 
 }

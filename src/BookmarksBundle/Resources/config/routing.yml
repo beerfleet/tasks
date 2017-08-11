@@ -6,5 +6,5 @@ homepage:
 
 bookmarks:
     path: /bookmarks
-    defaults: { _controller: BookmarksBundle:Homepage:bookmarks }
+    defaults: { _controller: BookmarksBundle:Bookmarks:showBookmarks }
     
