@@ -32,6 +32,8 @@ html, body {
 }
 
 .jumbotron {
+  background: url('../img/Etion-top-bezier.png') no-repeat;  
+  background-size: 100%;
   margin-bottom: 0px;
 }
 

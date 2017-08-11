@@ -3,9 +3,23 @@
   <nav class="navbar navbar-default">
     <div class="container">
       <ul class="nav navbar-nav">
-        <li class="hvr-buzz"><a href="{{ path('homepage') }}">Home</a></li>
-        <li class="hvr-buzz"><a href="{{ path('bookmarks') }}">Two</a></li>
-        <li class="hvr-buzz"><a href="#">Three</a></li>
+        <li class="hvr-curl-top-left"><a href="{{ path('homepage') }}">Home</a></li>
+        <li class="hvr-curl-top-left dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Bookmarks
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ url('bookmarks') }}">Toon</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="hvr-curl-top-left"><a href="#">Three</a></li>
       </ul>
     </div>
   </nav>
