@@ -43,12 +43,12 @@ html, body {
 }
 
 /* tabel */
-.etion-tabel {
+#etion-tabel {
   box-shadow: 3px 3px 15px #888888;
   width: 100%;
 }
 
-.etion-tabel, .etion-tabel th, .etion-tabel td {  
+#etion-tabel, #etion-tabel th, #etion-tabel td {  
   border: 1px solid #e2dfdf;
 }
 
@@ -57,12 +57,12 @@ tbody {
   color: gray;
 }
 
-.etion-tabel th {
+#etion-tabel th {
   height: 40px;
   text-align: center;
 }
 
-.etion-tabel td {
+#etion-tabel td {
   padding: 8px;
 }
 
