@@ -13,7 +13,7 @@ Customization and override
 
 html, body {  
   background-color: #00A6C1;
-  color: white;
+  color: gray;
   font-family: "Calibri";
 }
 
@@ -41,8 +41,10 @@ html, body {
 
 
 /* content */
-.show-bookmarks {
-  padding-top: 40px;
+#content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url('../img/wild-sea-blue.png');
 }
 
 /* tabel */
