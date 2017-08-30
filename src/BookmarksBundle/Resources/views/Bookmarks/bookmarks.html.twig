@@ -1,8 +1,10 @@
 {% extends "@Bookmarks/base.html.twig" %}
 
+{#
 {% block stylesheets %}
   {% include "@Bookmarks/hover-effects.html.twig" %}
 {% endblock stylesheets %}
+#}
 
 {% block title %}
   Bookmarks
@@ -18,11 +20,12 @@
       <div class="row">
         <div class="col-md-4">
           <div class="form-group">
-            <h1>MIJN SNELKOPPELINGEN</h1>
+            <h1>FILTER</h1>
             <input type="text" class="form-control" id="etion-tabel-filter" onkeyup="filterFunctie()" placeholder="Filter koppelingen ...">
           </div>
         </div>
         <div class="col-md-8">
+          <h1>BOOKMARKS</h1>
           <table id="etion-tabel">
             <thead>
               <tr class="header">
