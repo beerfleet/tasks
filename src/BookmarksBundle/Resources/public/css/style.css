@@ -57,9 +57,16 @@ html, body {
   border: 1px solid #e2dfdf;
 }
 
+
+/* general tables */
 tbody {
   background-color: white;
   color: gray;
+}
+
+thead {
+  background-color: #00A6C1;
+  color: white;
 }
 
 #etion-tabel th {
