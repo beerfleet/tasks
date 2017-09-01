@@ -18,7 +18,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class BookmarksController extends Controller {    
   
   public function showBookmarksAction() {    
-    $srv = $this->get('bookmarks.actions');
+    $srv = $this->get('bookmarks.service');
     $bookmarks = $srv->fetchAllBookmarks();
     return $this->render('@Bookmarks/Bookmarks/bookmarks.html.twig', ['bookmarks' => $bookmarks]);
   }

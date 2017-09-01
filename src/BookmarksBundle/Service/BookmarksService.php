@@ -8,8 +8,6 @@
 
 namespace BookmarksBundle\Service;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 /**
  * Description of BookmarksService
  *
@@ -30,7 +28,7 @@ class BookmarksService {
   public function fetchAllBookmarks() {
     /** @var $repo EntityRepository */    
     $repo = $this->em->getRepository(Bookmark::class);    
-    $bookmarks = $repo->findAll();
+    $bookmarks = $repo->findAllSorted();
     return $bookmarks;
   }
 

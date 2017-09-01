@@ -1,4 +1,5 @@
 BookmarksBundle\Entity\Bookmark:
+  repositoryClass: BookmarksBundle\Repository\BookmarksRepository
   type: entity
   table: bookmark
   id:
