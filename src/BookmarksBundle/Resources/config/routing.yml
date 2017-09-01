@@ -8,3 +8,6 @@ bookmarks:
     path: /bookmarks
     defaults: { _controller: BookmarksBundle:Bookmarks:showBookmarks }
     
+bookmarks-add-new:
+    path: /bookmarks/add/
+    defaults: { _controller: BookmarksBundle:Bookmarks:addNewBookmark }

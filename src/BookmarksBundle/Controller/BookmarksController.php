@@ -22,5 +22,9 @@ class BookmarksController extends Controller {
     $bookmarks = $srv->fetchAllBookmarks();
     return $this->render('@Bookmarks/Bookmarks/bookmarks.html.twig', ['bookmarks' => $bookmarks]);
   }
+  
+  public function addNewBookmarkAction() {
+    return $this->render('@Bookmarks/Bookmarks/bookmark-add-new.html.twig', []);
+  }
 
 }
