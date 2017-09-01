@@ -47,6 +47,10 @@ html, body {
   background-image: url('../img/wild-sea-blue.png');
 }
 
+hr {
+  color: #00A6C1;
+}
+
 /* tabel */
 #etion-tabel {
   box-shadow: 3px 3px 15px #888888;
