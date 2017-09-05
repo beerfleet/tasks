@@ -14,7 +14,7 @@ Customization and override
 html, body {  
   background-color: #00A6C1;
   color: gray;
-  font-family: "Calibri";
+  font-family: Arial, Helvetica, sans-serif;  
 }
 
 /* header */
@@ -38,7 +38,15 @@ html, body {
 }
 
 /* menu */
+#main-menu,
+.navbar-default .navbar-nav > li > a {
+  color: #00A6C1;
+}
 
+/* front-page */
+.front-image img {
+  width: 100%;
+}
 
 /* content */
 #content {
@@ -47,8 +55,17 @@ html, body {
   background-image: url('../img/wild-sea-blue.png');
 }
 
+#content h1 {
+  color: #00A6C1;
+}
+
 hr {
   color: #00A6C1;
+}
+
+/* forms */
+.form-control {
+  margin-bottom: 6px;
 }
 
 /* tabel */
