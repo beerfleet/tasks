@@ -1,6 +1,6 @@
 {% block navigation %}
 
-  <nav class="navbar navbar-default navbar-collapse">
+  <nav id="main-menu" class="navbar navbar-default navbar-collapse">
     <div class="container">
       <ul class="nav navbar-nav">
         <li><a href="{{ path('homepage') }}">Home</a></li>
@@ -11,12 +11,11 @@
           </a>
           <ul class="dropdown-menu">
             <li><a href="{{ url('bookmarks') }}">Toon</a></li>
-            <li><a href="{{ url('bookmarks-add-new') }}">Nieuwe Bookmark</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="{{ url('bookmarks-add-new') }}">Nieuwe</a></li>            
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">TODO: verwijder</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">TODO: ???</a></li>
           </ul>
         </li>
         <li><a href="#">Snippets</a></li>

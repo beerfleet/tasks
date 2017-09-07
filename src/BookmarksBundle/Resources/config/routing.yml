@@ -11,3 +11,7 @@ bookmarks:
 bookmarks-add-new:
     path: /bookmarks/add/
     defaults: { _controller: BookmarksBundle:Bookmarks:addNewBookmark }
+
+bookmarks-store-new:
+  path: /bookmarks/store/
+  defaults: { _controller: BookmarksBundle:Bookmarks:storeBookmark }

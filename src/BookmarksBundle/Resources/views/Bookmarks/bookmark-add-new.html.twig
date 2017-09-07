@@ -15,7 +15,15 @@
 {% block content %}
   <div class="show-bookmarks">
     <div class="container">
-      
+      <h1>Nieuwe Bookmark</h1>     
+
+      <form action="{{ url('bookmarks-store-new') }}">
+        <div class="form-group">
+          <input class="form-control" type="text" name="title" placeholder="Titel ..." />
+          <input class="form-control" type="text" name="path" placeholder="URI, Locatie" />
+        </div>            
+        <input class="btn btn-primary form-control" type="submit" value="Bewaar">
+      </form>
     </div>
   </div>
 {% endblock content %}
