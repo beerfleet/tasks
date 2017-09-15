@@ -40,4 +40,5 @@ services:
       public: true
       arguments: 
         - '@doctrine.orm.entity_manager'
+        - '@request_stack'
               

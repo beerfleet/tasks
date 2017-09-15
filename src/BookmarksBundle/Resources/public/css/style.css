@@ -23,6 +23,18 @@ html, body {
   font-size: 5em;
 }
 
+/* notifications */
+.errors {
+  border: red 1px solid;
+  margin: 12px;
+  padding: 12px;
+  text-align: center
+}
+
+.error-notice {
+  color: red;
+}
+
 .jvb-jump-left-bottom {  
   background-color: white;
   margin-left: -80px;
